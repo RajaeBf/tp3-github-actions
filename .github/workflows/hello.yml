@@ -15,5 +15,11 @@ jobs:
         run: 
           python --version
           pwd
-          ls -la
+          ls
+      - name: Informations Git
+        run: |
+          echo "Branche : $GITHUB_REF_NAME"
+          echo "Commit : $GITHUB_SHA"
+          echo "Evenement : $GITHUB_EVENT_NAME"
+
     
